@@ -45,6 +45,7 @@ const HeartDisease = () => {
               <Label htmlFor="sex">Sex</Label>
               <select
                 id="sex"
+                aria-label="Select sex"
                 className="w-full h-10 px-3 rounded-md border border-input"
                 required
               >

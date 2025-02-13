@@ -1,4 +1,5 @@
 import { Layout } from "../components/Layout";
+// import { TestMutation } from "../components/TestMutation";
 import useIsFetching from "../hooks/useIsFetching";
 import { DiseaseCard } from "../components/DiseaseCard";
 import { motion } from "framer-motion";
@@ -76,10 +77,11 @@ const Index = () => {
 
   const handleSomeAction = () => {
       startFetching();
-  };
+  }; // Ensure proper closure of the component
 
   return (
     <Layout>
+      {/* <TestMutation /> */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -144,7 +146,7 @@ const Index = () => {
                   </Link>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> // Closing motion.div for disease card
           ))}
         </div>
 
@@ -179,10 +181,10 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </motion.div>
-      </motion.div>
+        </motion.div> {/* Closing motion.div for 'Why Choose MedCheck?' */}
+      </motion.div> {/* Closing motion.div for main container */}
     </Layout>
-  );
-};
+  ); // Ensure proper closure of the Index component
+}; // Ensure proper closure of the Index component
 
 export default Index;

@@ -56,6 +56,7 @@ const ComprehensiveHealth = () => {
               <Label htmlFor="exerciseFrequency">Exercise Frequency</Label>
               <select
                 id="exerciseFrequency"
+                aria-label="Exercise Frequency"
                 className="w-full h-10 px-3 rounded-md border border-input"
                 required
               >
@@ -67,9 +68,9 @@ const ComprehensiveHealth = () => {
               </select>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="nutritionQuality">Nutrition Quality</Label>
               <select
                 id="nutritionQuality"
+                aria-label="Nutrition Quality"
                 className="w-full h-10 px-3 rounded-md border border-input"
                 required
               >

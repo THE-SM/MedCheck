@@ -45,6 +45,7 @@ const ImmuneSystem = () => {
               <select
                 id="stressLevel"
                 className="w-full h-10 px-3 rounded-md border border-input"
+                aria-label="Stress Level"
                 required
               >
                 <option value="">Select</option>
@@ -58,6 +59,7 @@ const ImmuneSystem = () => {
               <select
                 id="sleepQuality"
                 className="w-full h-10 px-3 rounded-md border border-input"
+                aria-label="Sleep Quality"
                 required
               >
                 <option value="">Select</option>
@@ -71,6 +73,7 @@ const ImmuneSystem = () => {
               <select
                 id="dietQuality"
                 className="w-full h-10 px-3 rounded-md border border-input"
+                aria-label="Diet Quality"
                 required
               >
                 <option value="">Select</option>
